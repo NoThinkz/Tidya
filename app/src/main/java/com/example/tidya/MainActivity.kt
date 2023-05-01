@@ -18,6 +18,7 @@ import com.example.tidya.presentation.AddScreen
 import com.example.tidya.presentation.AuthScreen
 import com.example.tidya.ui.theme.TidyaTheme
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import dagger.hilt.android.AndroidEntryPoint
 
 var outfit = FontFamily(
     listOf(
@@ -25,7 +26,7 @@ var outfit = FontFamily(
         Font(R.font.outfit_bold, FontWeight.Bold)
     )
 )
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @ExperimentalCoroutinesApi
     @ExperimentalFoundationApi
